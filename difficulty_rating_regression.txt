@@ -1,0 +1,25 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          course_rating   R-squared:                       0.154
+Model:                            OLS   Adj. R-squared:                  0.147
+Method:                 Least Squares   F-statistic:                     22.19
+Date:                Fri, 19 Feb 2021   Prob (F-statistic):           6.59e-06
+Time:                        17:28:10   Log-Likelihood:                -171.26
+No. Observations:                 124   AIC:                             346.5
+Df Residuals:                     122   BIC:                             352.2
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+const                 5.8407      0.348     16.780      0.000       5.152       6.530
+course_difficulty     0.2842      0.060      4.711      0.000       0.165       0.404
+==============================================================================
+Omnibus:                        1.877   Durbin-Watson:                   0.366
+Prob(Omnibus):                  0.391   Jarque-Bera (JB):                1.927
+Skew:                          -0.261   Prob(JB):                        0.382
+Kurtosis:                       2.683   Cond. No.                         23.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

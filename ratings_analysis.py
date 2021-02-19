@@ -44,7 +44,7 @@ plt.xlabel("Course difficulty") # https://www.kite.com/python/answers/how-to-add
 plt.ylabel("Course rating")
 plt.title("Relationship between course difficulty and course rating")
 plt.savefig('difficulty_rating_scatter.png')
-plt.show() # Placing this line before plt.savefig caused plot.savefig to return a blank image
+plt.show() # Placing this line before plt.savefig caused plot.savefig to return a blank image. The show() statements can be commented out in order to prevent the program from pausing.
 
 # Analysis 3: Display a histogram of course rating data, and also include the mean and standard deviation of that data on the histogram. Then save the histogram as a .png file.
 

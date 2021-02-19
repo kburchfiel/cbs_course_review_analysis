@@ -1,4 +1,4 @@
-# cbs_course_review_analysis
+# CBS Course Review Analysis
 
 Our final Intro to Python lecture at Columbia Business School, which took place last night, covered web scraping. It inspired me to build a web scraper program (course_ratings_scraper.py) that searched through all Summer 2020, Fall 2020, and Spring 2021 courses on cbscoursereview.com . The program created a .csv file with course difficulty and course ratings data for the ~123 Columbia Business School classes that had this data available. (I chose not to upload this .csv file to GitHub.)
 

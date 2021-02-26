@@ -1,0 +1,119 @@
+
+
+Results for the 1_iv model:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          course_rating   R-squared:                       0.154
+Model:                            OLS   Adj. R-squared:                  0.147
+Method:                 Least Squares   F-statistic:                     22.19
+Date:                Fri, 26 Feb 2021   Prob (F-statistic):           6.59e-06
+Time:                        16:39:45   Log-Likelihood:                -171.26
+No. Observations:                 124   AIC:                             346.5
+Df Residuals:                     122   BIC:                             352.2
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+const                 5.8407      0.348     16.780      0.000       5.152       6.530
+course_difficulty     0.2842      0.060      4.711      0.000       0.165       0.404
+==============================================================================
+Omnibus:                        1.877   Durbin-Watson:                   0.366
+Prob(Omnibus):                  0.391   Jarque-Bera (JB):                1.927
+Skew:                          -0.261   Prob(JB):                        0.382
+Kurtosis:                       2.683   Cond. No.                         23.7
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Results for the 2_iv model:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          course_rating   R-squared:                       0.154
+Model:                            OLS   Adj. R-squared:                  0.140
+Method:                 Least Squares   F-statistic:                     11.02
+Date:                Fri, 26 Feb 2021   Prob (F-statistic):           4.00e-05
+Time:                        16:39:45   Log-Likelihood:                -171.25
+No. Observations:                 124   AIC:                             348.5
+Df Residuals:                     121   BIC:                             357.0
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+const                 6.0203      1.052      5.720      0.000       3.937       8.104
+course_difficulty     0.2186      0.368      0.594      0.553      -0.509       0.947
+difficulty^2          0.0056      0.031      0.181      0.857      -0.056       0.067
+==============================================================================
+Omnibus:                        2.015   Durbin-Watson:                   0.361
+Prob(Omnibus):                  0.365   Jarque-Bera (JB):                2.059
+Skew:                          -0.273   Prob(JB):                        0.357
+Kurtosis:                       2.684   Cond. No.                         482.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Results for the 3_iv model:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          course_rating   R-squared:                       0.157
+Model:                            OLS   Adj. R-squared:                  0.136
+Method:                 Least Squares   F-statistic:                     7.472
+Date:                Fri, 26 Feb 2021   Prob (F-statistic):           0.000125
+Time:                        16:39:45   Log-Likelihood:                -171.01
+No. Observations:                 124   AIC:                             350.0
+Df Residuals:                     120   BIC:                             361.3
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+const                 7.7278      2.717      2.845      0.005       2.349      13.106
+course_difficulty    -0.7630      1.486     -0.514      0.608      -3.704       2.178
+difficulty^2          0.1819      0.260      0.699      0.486      -0.334       0.697
+difficulty^3         -0.0100      0.015     -0.682      0.497      -0.039       0.019
+==============================================================================
+Omnibus:                        2.008   Durbin-Watson:                   0.377
+Prob(Omnibus):                  0.366   Jarque-Bera (JB):                2.060
+Skew:                          -0.286   Prob(JB):                        0.357
+Kurtosis:                       2.730   Cond. No.                     9.53e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 9.53e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+Results for the 4_iv model:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          course_rating   R-squared:                       0.244
+Model:                            OLS   Adj. R-squared:                  0.218
+Method:                 Least Squares   F-statistic:                     9.580
+Date:                Fri, 26 Feb 2021   Prob (F-statistic):           9.47e-07
+Time:                        16:39:45   Log-Likelihood:                -164.32
+No. Observations:                 124   AIC:                             338.6
+Df Residuals:                     119   BIC:                             352.7
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+const                28.6210      6.235      4.590      0.000      16.275      40.967
+course_difficulty   -17.4358      4.743     -3.676      0.000     -26.828      -8.043
+difficulty^2          4.8565      1.293      3.755      0.000       2.295       7.418
+difficulty^3         -0.5600      0.150     -3.733      0.000      -0.857      -0.263
+difficulty^4          0.0231      0.006      3.682      0.000       0.011       0.035
+==============================================================================
+Omnibus:                        0.327   Durbin-Watson:                   0.529
+Prob(Omnibus):                  0.849   Jarque-Bera (JB):                0.176
+Skew:                          -0.091   Prob(JB):                        0.916
+Kurtosis:                       3.033   Cond. No.                     1.96e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.96e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.

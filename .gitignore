@@ -2,6 +2,7 @@ graphs*
 cbscoursereview*
 copy*
 course_ratings.csv
+course_ratings_expanded.csv
 course_ratings_analysis*
 geckodriver*
 htmloutput*

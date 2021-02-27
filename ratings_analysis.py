@@ -21,7 +21,7 @@ pd.set_option('display.max_rows',1000)
 df_ratings.sort_values('course_rating',ascending=False,inplace=True)
 # print(df_ratings)
 
-# Analysis 1: Estimate the course difficulty rating that corresponds to various percentiles (from 5 to 95,
+# Analysis 1: Estimate the course difficulty ratings that correspond to various percentiles (from 5 to 95,
 # in increments of 5), then save that information in .csv format.
 
 print("Course difficulty percentiles:")
@@ -54,7 +54,7 @@ plt.xlabel("Course difficulty")
 plt.ylabel("Course rating")
 plt.title("Relationship between course difficulty and course rating")
 plt.savefig('difficulty_rating_scatter.png')
-# plt.show() # Placing this line before plt.savefig caused plot.savefig to
+plt.show() # Placing this line before plt.savefig caused plot.savefig to
 # return a blank image. The show() statements can be commented out in order to
 # prevent the program from pausing.
 
@@ -71,7 +71,7 @@ plt.title("Course rating distribution")
 plt.text(5, 12, mean_text)
 plt.text(5, 10.5, stdev_text)
 plt.savefig('course_rating_histogram.png')
-# plt.show()
+plt.show()
 
 # Analysis 4: Do the same as in Analysis 3, but with course difficulty data.
 
@@ -84,15 +84,15 @@ plt.title("Course difficulty distribution")
 plt.text(3, 20, mean_text)
 plt.text(3, 18.5, stdev_text)
 plt.savefig('course_difficulty_histogram.png')
-# plt.show()
+plt.show()
 
-# Analysis 5: Perform various regression analysis to better understand the
+# Analysis 5: Perform various regression analyses to better understand the
 # relationship between difficulty ratings and course ratings, and output this
 # analysis to a .txt file.
 
 # First, I will create three additional columns for my df_ratings DataFrame.
 # These columns will store course difficulty ratings raised to the second,
-# third, and fourth power, respectively. I will then include these columns in my
+# third, and fourth power. I will then include these columns in my
 # regression analyses in order to determine whether they add any explanatory
 # power to my model. 
 df_ratings['difficulty^2']=df_ratings['course_difficulty']**2
@@ -137,7 +137,7 @@ with open('difficulty_rating_regressions.txt', 'w') as fh:
         # https://stackabuse.com/writing-to-a-file-with-pythons-print-function/
         fh.write(result[1].summary().as_text())
 
-# The results of the regression (avaliable within
+# The results of the regression (available within
 # 'difficulty_rating_regressions.txt') indicate that the first model (with only
 # one independent variable) performs just as well or better than the second and
 # third models. Although the fourth model (with 4 independent variables) has the
@@ -146,14 +146,13 @@ with open('difficulty_rating_regressions.txt', 'w') as fh:
 # validation to better evaluate each model; however, for now, I will choose to
 # use the one-variable model.
 
-# My final analysis will be to determine the error value of my model's
-# prediction for each class. In my one-variable model, each class's predicted
+# My final analysis will be to determine the error value of my model's course
+# rating prediction for each class. In my one-variable model, each class's predicted
 # difficulty rating equals the model's intercept plus the product of the class's
 # coefficient. 
 
-# By adding this error value to my DataFrame, I will be able to calculate a
-# 'value' of sorts for each class. If a class's difficulty is seen as its 'cost'
-# and its rating as seen as its quality, the error term (the discrepancy between
+# If a class's difficulty is seen as its 'cost'
+# and its rating is seen as its quality, the error term (the discrepancy between
 # its cost and its quality) reflects how much quality a student gets for the
 # effort he or she puts into the class. In this case, the classes with the
 # lowest error terms (i.e. -3) will offer the best value for students, and those with the

@@ -7,7 +7,7 @@ Dep. Variable:          course_rating   R-squared:                       0.154
 Model:                            OLS   Adj. R-squared:                  0.147
 Method:                 Least Squares   F-statistic:                     22.19
 Date:                Fri, 26 Feb 2021   Prob (F-statistic):           6.59e-06
-Time:                        16:39:45   Log-Likelihood:                -171.26
+Time:                        23:23:33   Log-Likelihood:                -171.26
 No. Observations:                 124   AIC:                             346.5
 Df Residuals:                     122   BIC:                             352.2
 Df Model:                           1                                         
@@ -34,7 +34,7 @@ Dep. Variable:          course_rating   R-squared:                       0.154
 Model:                            OLS   Adj. R-squared:                  0.140
 Method:                 Least Squares   F-statistic:                     11.02
 Date:                Fri, 26 Feb 2021   Prob (F-statistic):           4.00e-05
-Time:                        16:39:45   Log-Likelihood:                -171.25
+Time:                        23:23:33   Log-Likelihood:                -171.25
 No. Observations:                 124   AIC:                             348.5
 Df Residuals:                     121   BIC:                             357.0
 Df Model:                           2                                         
@@ -62,7 +62,7 @@ Dep. Variable:          course_rating   R-squared:                       0.157
 Model:                            OLS   Adj. R-squared:                  0.136
 Method:                 Least Squares   F-statistic:                     7.472
 Date:                Fri, 26 Feb 2021   Prob (F-statistic):           0.000125
-Time:                        16:39:45   Log-Likelihood:                -171.01
+Time:                        23:23:33   Log-Likelihood:                -171.01
 No. Observations:                 124   AIC:                             350.0
 Df Residuals:                     120   BIC:                             361.3
 Df Model:                           3                                         
@@ -93,7 +93,7 @@ Dep. Variable:          course_rating   R-squared:                       0.244
 Model:                            OLS   Adj. R-squared:                  0.218
 Method:                 Least Squares   F-statistic:                     9.580
 Date:                Fri, 26 Feb 2021   Prob (F-statistic):           9.47e-07
-Time:                        16:39:45   Log-Likelihood:                -164.32
+Time:                        23:23:33   Log-Likelihood:                -164.32
 No. Observations:                 124   AIC:                             338.6
 Df Residuals:                     119   BIC:                             352.7
 Df Model:                           4                                         

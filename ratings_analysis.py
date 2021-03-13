@@ -47,7 +47,7 @@ df_difficulty_percentiles.to_csv('difficulty_percentiles.csv')
 xset = df_ratings['course_difficulty']
 yset = df_ratings['course_rating']
 plt.scatter(xset,yset)
-# The following lines of code determine the best fit line of the stock through a
+# The following lines of code determine the best fit line of the scatter plot through a
 #linear regression analysis. 
 xreg = xset
 xreg = sm.add_constant(xreg)

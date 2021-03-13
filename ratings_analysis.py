@@ -47,14 +47,17 @@ df_difficulty_percentiles.to_csv('difficulty_percentiles.csv')
 xset = df_ratings['course_difficulty']
 yset = df_ratings['course_rating']
 plt.scatter(xset,yset)
-# The following lines of code determine the best fit line of the scatter plot through a
-#linear regression analysis. 
+# The following lines of code determine the best fit line of the scatter plot
+#through a linear regression analysis. 
 xreg = xset
 xreg = sm.add_constant(xreg)
 output = sm.OLS(yset,xreg)
 results = output.fit()
 xspace = np.linspace(2,10,2) # Only two x axis points are needed since the line will be linear.
-yspace = results.params[0] + results.params[1]*xspace # params[0] equals the intercept of the regression, and params [1] equals the coefficient, so this line simply plots the best fit line using the formula y = intercept + coefficient*x.
+yspace = results.params[0] + results.params[1]*xspace 
+# params[0] equals the intercept of the regression, and params [1] equals the
+# coefficient, so this line simply plots the best fit line using the formula y =
+# intercept + coefficient*x.
 plt.plot(xspace, yspace)
 plt.xlabel("Course difficulty") 
 # https://www.kite.com/python/answers/how-to-add-axis-labels-to-a-plot-in-matplotlib-in-python
